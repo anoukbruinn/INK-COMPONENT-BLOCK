@@ -172,7 +172,6 @@
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-			/* justify-content: space-between; */
 			width: 100%;
 			margin: 10% 0;
 		}
@@ -206,14 +205,9 @@
 			color: var(--candelLight);
 		}
 		.footer-container {
-			/* display: inline;
-		flex-direction: row;
-		flex-wrap: wrap; */
 			display: inline-flex;
-
 			padding: 5em 6em 0em 6em;
-			/* align-items: end;
-		justify-content: space-between; */
+			
 		}
 
 		footer nav {
@@ -311,6 +305,8 @@
 	}
 	/* ============== FOOTER END ============== */
 
+	@media only screen and (max-width: 600px) {
+
 	footer {
 		background-color: #051a1a;
 	}
@@ -324,4 +320,88 @@
 		display: inline-block;
 		transition: 0.2s;
 	}
+
+	footer ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+
+	.sponsor-button {
+		text-decoration: none;
+		background-color: var(--plantGreen);
+		color: var(--justWhite);
+		font-family: var(--copy-font);
+		font-weight: bold;
+		border: none;
+		border-radius: 3em;
+		padding: 1em 2em;
+		text-transform: uppercase;
+		transition: 0.2s;
+		cursor: pointer;
+		margin-bottom: 1em;
+	}
+
+	.sponsor-button:hover {
+		background-color: var(--candelLight);
+	}
+
+	.sponsor-icon path {
+		stroke: currentColor;
+		fill: currentColor;
+		color: var(--justWhite);
+	}
+
+	#footer-sponsor-button {
+		font-weight: bold;
+	}
+
+	#footer-sponsor-button:hover {
+		color: var(--charcoal);
+	}
+
+	.sponsor-button:hover svg {
+		transform: translateY(1px) translateX(3px);
+	}
+
+	.sponsor-button svg {
+		transform: translateY(1px);
+	}
+
+	.social-icons {
+		display: flex;
+		justify-content: center;
+		margin-left: 5px;
+	}
+
+	.contact {
+		color: #ffffff;
+		font-size: 25px;
+		margin-bottom: 25px;
+		font-weight: 200;
+		display: flex;
+		justify-content: center;
+		}
+	
+	.link-container:hover a {
+		font-size: 1.5rem;
+		line-height: 0.8;
+		color: var(--candelLight);
+		}
+
+	.link-contact:hover a {
+		font-size: 1.5rem;
+		line-height: 0.8;
+		color: var(--candelLight);
+		}
+
+		svg {
+		
+		margin-left: 10px;
+  }
+
+	}
+
+
+	
 </style>
