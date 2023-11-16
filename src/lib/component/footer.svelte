@@ -14,7 +14,7 @@
 						<li><a href="/about">About</a></li>
 					</div>
 					<div class="link-container">
-						<li><a href="/promise">Promise</a></li>
+						<li><a class="promise" href="/promise">Promise</a></li>
 					</div>
 				</ul>
 			</nav>
@@ -340,6 +340,9 @@
 		transition: 0.2s;
 		cursor: pointer;
 		margin-bottom: 1em;
+		margin-top: 1em;
+		display: flex;
+		justify-content: center;
 	}
 
 	.sponsor-button:hover {
@@ -400,6 +403,35 @@
 		margin-left: 10px;
   }
 
+ ul.contact-info {
+	margin-bottom: 3rem;
+ }
+
+  .contact-info a {
+			font-family: var(--copy-font);
+			font-size: 1em;
+			font-weight: 200;
+			line-height: 1em;
+			transition: 0.2s;
+		}
+
+.contact-info a:hover {
+			color: var(--candelLight);
+		}
+	
+.link-contact {
+	display: flex;
+	justify-content: center;
+}
+
+.link-container{
+	display: flex;
+	justify-content: center;
+}
+
+.promise {
+	margin-bottom: 3rem;
+}
 	}
 
 
