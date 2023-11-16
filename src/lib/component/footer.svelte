@@ -24,7 +24,7 @@
 			<ul class="contact-info">
 				<li class="contact">CONTACT</li>
 				<div class="link-contact">
-					<li><a href="tel:+31 20 1234679">+31 20 1234679</a></li>
+					<li><a class="tel" href="tel:+31 20 1234679">+31 20 1234679</a></li> 
 				</div>
 				<div class="link-contact">
 					<li><a href="mailto:info@ink.org">info@ink.org</a></li>
@@ -192,7 +192,9 @@
 			display: inline-block;
 			transition: 0.2s;
 		}
-
+		.link-contact{
+			margin-bottom: 25px;
+		}
 		.link-container:hover a {
 			font-size: 1.5rem;
 			line-height: 0.8;
@@ -207,7 +209,6 @@
 		.footer-container {
 			display: inline-flex;
 			padding: 5em 6em 0em 6em;
-			
 		}
 
 		footer nav {
@@ -219,8 +220,9 @@
 			font-family: var(--copy-font);
 			font-size: 1em;
 			font-weight: 200;
-			line-height: 1em;
+			line-height: 2em;
 			transition: 0.2s;
+			margin-bottom: 21px;
 		}
 
 		.contact-info a:hover {
@@ -300,140 +302,137 @@
 		}
 
 		.icons {
-			margin-left: 31rem;
+			margin-left: 30rem;
 		}
 	}
 	/* ============== FOOTER END ============== */
 
 	@media only screen and (max-width: 600px) {
-
-	footer {
-		background-color: #051a1a;
-	}
-
-	footer a {
-		text-decoration: none;
-		color: var(--justWhite);
-		font-family: var(--paragraph-font);
-		text-transform: uppercase;
-		font-size: 1em;
-		display: inline-block;
-		transition: 0.2s;
-	}
-
-	footer ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
+		footer {
+			background-color: #051a1a;
 		}
 
-	.sponsor-button {
-		text-decoration: none;
-		background-color: var(--plantGreen);
-		color: var(--justWhite);
-		font-family: var(--copy-font);
-		font-weight: bold;
-		border: none;
-		border-radius: 3em;
-		padding: 1em 2em;
-		text-transform: uppercase;
-		transition: 0.2s;
-		cursor: pointer;
-		margin-bottom: 1em;
-		margin-top: 1em;
-		display: flex;
-		justify-content: center;
-	}
-
-	.sponsor-button:hover {
-		background-color: var(--candelLight);
-	}
-
-	.sponsor-icon path {
-		stroke: currentColor;
-		fill: currentColor;
-		color: var(--justWhite);
-	}
-
-	#footer-sponsor-button {
-		font-weight: bold;
-	}
-
-	#footer-sponsor-button:hover {
-		color: var(--charcoal);
-	}
-
-	.sponsor-button:hover svg {
-		transform: translateY(1px) translateX(3px);
-	}
-
-	.sponsor-button svg {
-		transform: translateY(1px);
-	}
-
-	.social-icons {
-		display: flex;
-		justify-content: center;
-		margin-left: 5px;
-	}
-
-	.contact {
-		color: #ffffff;
-		font-size: 25px;
-		margin-bottom: 25px;
-		font-weight: 200;
-		display: flex;
-		justify-content: center;
-		}
-	
-	.link-container:hover a {
-		font-size: 1.5rem;
-		line-height: 0.8;
-		color: var(--candelLight);
+		footer a {
+			text-decoration: none;
+			color: var(--justWhite);
+			font-family: var(--paragraph-font);
+			text-transform: uppercase;
+			font-size: 1em;
+			display: inline-block;
+			transition: 0.2s;
 		}
 
-	.link-contact:hover a {
-		font-size: 1.5rem;
-		line-height: 0.8;
-		color: var(--candelLight);
+		footer ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.sponsor-button {
+			text-decoration: none;
+			background-color: var(--plantGreen);
+			color: var(--justWhite);
+			font-family: var(--copy-font);
+			font-weight: bold;
+			border: none;
+			border-radius: 3em;
+			padding: 1em 2em;
+			text-transform: uppercase;
+			transition: 0.2s;
+			cursor: pointer;
+			margin-bottom: 1em;
+			margin-top: 1em;
+			display: flex;
+			justify-content: center;
+		}
+
+		.sponsor-button:hover {
+			background-color: var(--candelLight);
+		}
+
+		.sponsor-icon path {
+			stroke: currentColor;
+			fill: currentColor;
+			color: var(--justWhite);
+		}
+
+		#footer-sponsor-button {
+			font-weight: bold;
+		}
+
+		#footer-sponsor-button:hover {
+			color: var(--charcoal);
+		}
+
+		.sponsor-button:hover svg {
+			transform: translateY(1px) translateX(3px);
+		}
+
+		.sponsor-button svg {
+			transform: translateY(1px);
+		}
+
+		.social-icons {
+			display: flex;
+			justify-content: center;
+			margin-left: 5px;
+		}
+
+		.contact {
+			color: #ffffff;
+			font-size: 25px;
+			margin-bottom: 25px;
+			font-weight: 200;
+			display: flex;
+			justify-content: center;
+		}
+
+		.link-container:hover a {
+			font-size: 1.5rem;
+			line-height: 0.8;
+			color: var(--candelLight);
+		}
+
+		.link-contact:hover a {
+			font-size: 1.5rem;
+			line-height: 0.8;
+			color: var(--candelLight);
 		}
 
 		svg {
-		
-		margin-left: 10px;
-  }
+			margin-left: 10px;
+		}
 
- ul.contact-info {
-	margin-bottom: 3rem;
- }
+		ul.contact-info {
+			margin-bottom: 3rem;
+		}
 
-  .contact-info a {
+		.contact-info a {
 			font-family: var(--copy-font);
 			font-size: 1em;
 			font-weight: 200;
 			line-height: 1em;
 			transition: 0.2s;
+			
 		}
 
-.contact-info a:hover {
+		.contact-info a:hover {
 			color: var(--candelLight);
 		}
-	
-.link-contact {
-	display: flex;
-	justify-content: center;
-}
 
-.link-container{
-	display: flex;
-	justify-content: center;
-}
+		.link-contact {
+			display: flex;
+			justify-content: center;
+			
+		}
 
-.promise {
-	margin-bottom: 3rem;
-}
+		.link-container {
+			display: flex;
+			justify-content: center;
+		}
+
+		.promise {
+			margin-bottom: 3rem;
+		}
 	}
-
-
-	
 </style>
