@@ -302,7 +302,8 @@
 		}
 
 		.icons {
-			margin-left: 30rem;
+			margin-left: 30em;
+			width: 16rem;
 		}
 	}
 	/* ============== FOOTER END ============== */
